@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\User;
 use Livewire\Component;
 use Livewire\WithPagination;
-use Livewire\Attributes\on;
+use Livewire\Attributes\On;
 
 class EventCommunicationComponentsUserList extends Component
 {
@@ -21,15 +21,17 @@ class EventCommunicationComponentsUserList extends Component
     //     $this->resetPage();
     // }
 
-    protected $listeners = ['user-created' => 'updatelist'];
+    protected $listeners = ['user-created' => '$refresh'];
 
-    public function updatelist($user)
-    {
-        $this->resetPage();
-        // dd(123);
-        // $this->users[] = $user;
-        // $this->resetPage();
-    }
+    // protected $listeners = ['user-created' => 'updatelist'];
+
+    // public function updatelist($user)
+    // {
+    //     $this->resetPage();
+    //     // dd(123);
+    //     // $this->users[] = $user;
+    //     // $this->resetPage();
+    // }
 
     public function render()
     {

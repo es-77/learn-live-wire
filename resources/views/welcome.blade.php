@@ -24,14 +24,15 @@
         {{-- @livewire('file-upload') --}}
         {{-- @livewire('loading-state') --}}
         {{-- @livewire('event-communication-components') --}}
-        <div class="flex">
+        {{-- <div class="flex">
             <div class="w-2/4">
                 @livewire('event-communication-components-user-list')
             </div>
             <div class="w-2/4">
                 @livewire('event-communication-components-user-create')
             </div>
-        </div>
+        </div> --}}
+        @livewire('polling-refesh')
     </div>
     @livewireScripts()
 </body>
