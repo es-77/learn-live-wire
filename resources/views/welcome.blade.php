@@ -35,7 +35,8 @@
         {{-- @livewire('polling-refesh') --}}
         {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}}
         {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}} {{-- not workking --}}
-        @livewire('livepropertyupdate')
+        {{-- @livewire('livepropertyupdate') --}}
+        @livewire('pass-datato-components-mount', ['name' => 'John Doe', 'age' => 35])
     </div>
     @livewireScripts()
 </body>
