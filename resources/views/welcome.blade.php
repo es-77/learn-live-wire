@@ -32,7 +32,10 @@
                 @livewire('event-communication-components-user-create')
             </div>
         </div> --}}
-        @livewire('polling-refesh')
+        {{-- @livewire('polling-refesh') --}}
+        {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}}
+        {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}} {{-- not workking --}}
+        @livewire('livepropertyupdate')
     </div>
     @livewireScripts()
 </body>
