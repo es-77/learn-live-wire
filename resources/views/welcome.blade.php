@@ -36,7 +36,8 @@
         {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}}
         {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}} {{-- not workking --}}
         {{-- @livewire('livepropertyupdate') --}}
-        @livewire('pass-datato-components-mount', ['name' => 'John Doe', 'age' => 35])
+        {{-- @livewire('pass-datato-components-mount', ['name' => 'John Doe', 'age' => 35]) --}}
+        @livewire('computed-properties')
     </div>
     @livewireScripts()
 </body>
