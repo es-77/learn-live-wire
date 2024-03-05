@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="antialiased">
@@ -37,9 +38,17 @@
         {{-- @livewire('lazy-loading-skeletonloader', ['lazy' => true]) --}} {{-- not workking --}}
         {{-- @livewire('livepropertyupdate') --}}
         {{-- @livewire('pass-datato-components-mount', ['name' => 'John Doe', 'age' => 35]) --}}
-        @livewire('computed-properties')
+        {{-- @livewire('computed-properties') --}}
+        @livewire('sweet-alerts')
+
     </div>
     @livewireScripts()
+    {{-- <script src="{{ asset('js/model.js') }}"></script> --}}
+
 </body>
+
+{{-- <script src="{{ asset('JS/model.js') }}"></script>
+<script src="./resources/js/model.js"></script> --}}
+
 
 </html>
